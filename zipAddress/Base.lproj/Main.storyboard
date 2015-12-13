@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="zipAddress" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="郵便番号を入力してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmA-3z-0uG">
+                                <rect key="frame" x="20" y="60" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9Q-zH-X4d">
+                                <rect key="frame" x="270" y="130" width="60" height="30"/>
+                                <state key="normal" title="住所検索"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="都道府県" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VP7-Y9-VMf">
+                                <rect key="frame" x="20" y="210" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsG-tc-pqq">
+                                <rect key="frame" x="20" y="251" width="560" height="24"/>
+                                <color key="backgroundColor" red="0.81440019656356188" green="1" blue="0.96245806105113818" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="hj5-2a-4Cj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="住所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVq-8h-kmS">
+                                <rect key="frame" x="20" y="295" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ae-7O-Eir">
+                                <rect key="frame" x="20" y="336" width="560" height="24"/>
+                                <color key="backgroundColor" red="0.81440019656356188" green="1" blue="0.96245806105113818" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Uxw-dY-u9O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vsG-tc-pqq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1Z5-QV-YsE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3ae-7O-Eir" secondAttribute="trailing" id="4py-UZ-1Y1"/>
+                            <constraint firstItem="VP7-Y9-VMf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Acr-ab-xFp"/>
+                            <constraint firstItem="fmA-3z-0uG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Lqg-NT-wRa"/>
+                            <constraint firstItem="3ae-7O-Eir" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="N0H-Gm-sRH"/>
+                            <constraint firstItem="vsG-tc-pqq" firstAttribute="top" secondItem="VP7-Y9-VMf" secondAttribute="bottom" constant="20" id="VJw-66-WiE"/>
+                            <constraint firstItem="DVq-8h-kmS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cyE-J4-pZI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fmA-3z-0uG" secondAttribute="trailing" id="dLJ-3n-Efv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vsG-tc-pqq" secondAttribute="trailing" id="dWI-oL-UBn"/>
+                            <constraint firstItem="fmA-3z-0uG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="eaw-fx-RSz"/>
+                            <constraint firstItem="A9Q-zH-X4d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gPx-gz-wA0"/>
+                            <constraint firstItem="3ae-7O-Eir" firstAttribute="top" secondItem="DVq-8h-kmS" secondAttribute="bottom" constant="20" id="gRn-0E-xoY"/>
+                            <constraint firstItem="DVq-8h-kmS" firstAttribute="top" secondItem="vsG-tc-pqq" secondAttribute="bottom" constant="20" id="h0n-bQ-NhO"/>
+                            <constraint firstItem="VP7-Y9-VMf" firstAttribute="top" secondItem="fmA-3z-0uG" secondAttribute="bottom" constant="120" id="hFb-cb-DN4"/>
+                            <constraint firstItem="A9Q-zH-X4d" firstAttribute="top" secondItem="fmA-3z-0uG" secondAttribute="bottom" constant="40" id="y9R-Pf-FUh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="291"/>
+        </scene>
+    </scenes>
+</document>
