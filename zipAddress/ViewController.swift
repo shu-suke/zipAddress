@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var zipTextField: UITextField!
+    @IBOutlet weak var prefLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
     @IBAction func tapReturn() {
     }
 
@@ -46,7 +48,9 @@ class ViewController: UIViewController {
 //                    codeが200でないときは、検索エラー
                     if let errmsg = jsonDic["message"] as? String {
 //                        エラーメッセージを表示
-                        print(errmsg)
+                        dispatch_async(dispatch_get_main_queue()) {
+                            self.prefLabel.text = errmsg
+                        }
                     }
                 }
             }
@@ -54,16 +58,22 @@ class ViewController: UIViewController {
 //                dataという項目が辞書データなら、その中身を調べる
                 if let pref = data["pref"] as? String {
 //                    data内のprefという項目が文字列なら、県名
-                    print("県名は\(pref)です")
+                    dispatch_async(dispatch_get_main_queue()) {
+                        self.prefLabel.text = pref
+                    }
                 }
                 if let address = data["address"] as? String {
 //                    data内のaddressという項目が文字列なら、住所
-                    print("住所は\(address)です")
+                    dispatch_async(dispatch_get_main_queue()) {
+                        self.addressLabel.text = address
+                    }
                 }
             }
         } catch {
 //            json解析に失敗した時に実行
-            print("エラーです")
+            dispatch_async(dispatch_get_main_queue()) {
+                self.addressLabel.text = "エラーです"
+            }
         }
     }
     
