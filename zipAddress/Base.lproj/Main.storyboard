@@ -22,10 +22,16 @@
                                 <rect key="frame" x="20" y="60" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <action selector="tapReturn" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="4Cp-1h-gq9"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9Q-zH-X4d">
                                 <rect key="frame" x="270" y="130" width="60" height="30"/>
                                 <state key="normal" title="住所検索"/>
+                                <connections>
+                                    <action selector="tapSearch" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZRt-sa-DnT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="都道府県" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VP7-Y9-VMf">
                                 <rect key="frame" x="20" y="210" width="68" height="21"/>
@@ -79,6 +85,9 @@
                             <constraint firstItem="A9Q-zH-X4d" firstAttribute="top" secondItem="fmA-3z-0uG" secondAttribute="bottom" constant="40" id="y9R-Pf-FUh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="zipTextField" destination="fmA-3z-0uG" id="l2j-K9-TTS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
