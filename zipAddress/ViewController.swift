@@ -33,10 +33,6 @@ class ViewController: UIViewController {
     }
 //    検索処理が完了したら実行する
     func onGetAddress(data: NSData?,res: NSURLResponse?, error: NSError?){
-//        確認のためdataを表示
-        print(data)
-
-        /*
         
 //        受け取ったデータをJSON解析する。もしエラーならcatchへジャンプする
         do{
@@ -69,7 +65,6 @@ class ViewController: UIViewController {
 //            json解析に失敗した時に実行
             print("エラーです")
         }
-*/
     }
     
     override func viewDidLoad() {
