@@ -1,9 +1,8 @@
 # zipAddress
-A sample application for swift. I refered to a sample code in a book. This is an application using JSON data. 
+A sample application for swift.It's using JSON data. I refered to a sample code in a book.  
   ***
-swiftの勉強のために作りました。  
+swiftの勉強のために作りました。JSONデータを利用した住所検索アプリです。  
 『森 巧尚(2015) SwiftではじめるiPhoneアプリ開発の教科書  株式会社マイナビ出版』のサンプルコードです。  
-JSONデータを利用した住所検索アプリです。
 ## How to use
 When you input a zip code and push the "search" button,an address is displayed.  
   ***
